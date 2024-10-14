@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Tayfun 👋
 
 ### Aspiring Full-Stack Developer | Passionate about building tech solutions
 
