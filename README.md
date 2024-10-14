@@ -37,7 +37,7 @@
 ### 🌱 A bit about me
 
 - **Aspiring Full-Stack Developer**: I’m currently on a journey to become proficient in full-stack development.
-- **Fun Fact**: I love [anime, cats, coffee].
+- **Fun Fact**: I love anime, cats and coffee.
 - **Current Goal**: To master full-stack technologies and build end-to-end web applications.
 
 ---
