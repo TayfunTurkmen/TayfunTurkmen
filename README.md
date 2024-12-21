@@ -10,19 +10,19 @@ Aspiring Full-Stack Developer | Passionate about building tech solutions
 
 <h2 align="center">🚀 Current Focus</h2>
 
-**Learning</b>: Full-stack development (JavaScript, Node.js, React, Express, databases)<br>
-**Projects</b>: Working on building full-stack web apps and APIs.
+<b>Learning</b>: Full-stack development (JavaScript, Node.js, React, Express, databases)<br>
+<b>Projects</b>: Working on building full-stack web apps and APIs.
 <br>
 <h2 align="center">🛠 Projects</h2>
 <br>
-**[WordPress Development](#)** – _Building and managing custom WordPress websites with a focus on performance and SEO optimization._<br>
-**[Server & Firewall Management](#)** – _Configuring and managing servers, ensuring security via firewall management and monitoring._
+<b>WordPress Development</b> – Building and managing custom WordPress websites with a focus on performance and SEO optimization.<br>
+<b>Server & Firewall Management</b> – Configuring and managing servers, ensuring security via firewall management and monitoring.
 <br>
 <h2 align="center">🌱 A bit about me</h2>
 <br>
-**Aspiring Full-Stack Developer**: I’m currently on a journey to become proficient in full-stack development.<br>
-**Fun Fact**: I love anime, cats and coffee.<br>
-**Current Goal**: To master full-stack technologies and build end-to-end web applications.
+<b>Aspiring Full-Stack Developer</b>: I’m currently on a journey to become proficient in full-stack development.<br>
+<b>Fun Fact</b>: I love anime, cats and coffee.<br>
+<b>Current Goal</b>: To master full-stack technologies and build end-to-end web applications.
 </div>
 <br>
 <h2 align="center">⚡ Stats ⚡</h2>
