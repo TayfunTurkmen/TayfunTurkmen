@@ -5,7 +5,7 @@ Aspiring Full-Stack Developer | Passionate about building tech solutions
 <h2 align="center">🔧 Tech Stack</h2>
 <br>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,html,css,tailwind,express,mongodb,docker,linux,cloudflare,figma,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,html,css,tailwind,express,mongodb,docker,linux,cloudflare,dotnet,vscode&theme=dark" />
 </p>
 
 <h2 align="center">🚀 Current Focus</h2>
