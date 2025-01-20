@@ -5,7 +5,7 @@ Aspiring Full-Stack Developer | Passionate about building tech solutions
 <h2 align="center">🔧 Tech Stack</h2>
 <br>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,html,css,tailwind,express,mongodb,docker,linux,cloudflare,wordpress,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,html,css,tailwind,express,mongodb,docker,linux,cloudflare,wordpress,vscode&theme=light" />
 </p>
 
 <h2 align="center">🚀 Current Focus</h2>
@@ -32,10 +32,10 @@ Aspiring Full-Stack Developer | Passionate about building tech solutions
 </div>
 <br>
 <div align=center>
-  <img width=390 src="https://github-readme-streak-stats-salesp07.vercel.app/?user=TayfunTurkmen&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
-  <img width=390 src="https://github-readme-stats-salesp07.vercel.app/api?username=TayfunTurkmen&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
+  <img width=390 src="https://github-readme-streak-stats-salesp07.vercel.app/?user=TayfunTurkmen&count_private=true&theme=ambient-gradient&border_radius=10" alt="streak stats"/>
+  <img width=390 src="https://github-readme-stats-salesp07.vercel.app/api?username=TayfunTurkmen&count_private=true&show_icons=true&theme=ambient-gradient&rank_icon=github&border_radius=10" alt="readme stats" />
   <br/>
-  <img width=325 align="center" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=taqui-786&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
+  <img width=325 align="center" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=taqui-786&hide=HTML&langs_count=8&layout=compact&theme=ambient-gradient&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
 
 <h2 align="center">📫 Let’s Connect</h2>
 
