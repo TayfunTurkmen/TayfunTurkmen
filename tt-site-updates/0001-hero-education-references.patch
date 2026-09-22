@@ -1,0 +1,379 @@
+From b9256a74316fd18ed114fb0da5da2db99137c7bd Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Tue, 22 Sep 2026 14:15:14 +0000
+Subject: [PATCH] Refine hero, brand MediGoAcademy, and expand education
+
+Make the homepage hero more minimal with brand-led copy and simple CTAs, rename MediGoAcademy as a single word, add sahibindenkonutal.com to references, and list Istanbul University MIS in education.
+---
+ messages/en.json                |   7 ++--
+ messages/tr.json                |   7 ++--
+ public/sahibindenkonutal.png    | Bin 0 -> 9329 bytes
+ src/app/[locale]/about/page.tsx |   1 +
+ src/app/[locale]/page.tsx       |  67 ++++++++++++++++++--------------
+ src/app/globals.css             |  45 +++++++++++++++++++++
+ 6 files changed, 91 insertions(+), 36 deletions(-)
+ create mode 100644 public/sahibindenkonutal.png
+
+diff --git a/messages/en.json b/messages/en.json
+index 15e68a4..fc7135d 100644
+--- a/messages/en.json
++++ b/messages/en.json
+@@ -77,9 +77,10 @@
+     "exp2": "Freelance WordPress Developer (Jan 2024 - Aug 2025)",
+     "exp3": "Digital Media Specialist · Ali AYYILDIZ Inter Consultancy (Sep 2024 - Jun 2025)",
+     "educationTitle": "Education and training",
+-    "edu1": "Computer Programming · Mersin University",
+-    "edu2": "International Relations · Anadolu University",
+-    "edu3": "Full Stack Web Developer Course · GoIT",
++    "edu1": "Management Information Systems (MIS) · Istanbul University",
++    "edu2": "Computer Programming · Mersin University",
++    "edu3": "International Relations · Anadolu University",
++    "edu4": "Full Stack Web Developer Course · GoIT",
+     "linkedinCta": "View LinkedIn profile"
+   },
+   "footer": {
+diff --git a/messages/tr.json b/messages/tr.json
+index 151fefe..9b48751 100644
+--- a/messages/tr.json
++++ b/messages/tr.json
+@@ -77,9 +77,10 @@
+     "exp2": "Serbest WordPress Geliştiricisi (Oca 2024 - Ağu 2025)",
+     "exp3": "Dijital Medya Uzmanı · Ali AYYILDIZ Inter Consultancy (Eyl 2024 - Haz 2025)",
+     "educationTitle": "Eğitim ve gelişim",
+-    "edu1": "Bilgisayar Programcılığı · Mersin Üniversitesi",
+-    "edu2": "Uluslararası İlişkiler · Anadolu Üniversitesi",
+-    "edu3": "Full-Stack Web Geliştirme Eğitimi · GoIT",
++    "edu1": "Yönetim Bilişim Sistemleri (MIS) · İstanbul Üniversitesi",
++    "edu2": "Bilgisayar Programcılığı · Mersin Üniversitesi",
++    "edu3": "Uluslararası İlişkiler · Anadolu Üniversitesi",
++    "edu4": "Full-Stack Web Geliştirme Eğitimi · GoIT",
+     "linkedinCta": "LinkedIn profilini görüntüle"
+   },
+   "footer": {
+diff --git a/public/sahibindenkonutal.png b/public/sahibindenkonutal.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..685334c0aa414c1ba1e8ca907ca2daf24109184e
+GIT binary patch
+literal 9329
+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
+QJOCmqt@H%-___ao0a#;*SO5S3
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/app/[locale]/about/page.tsx b/src/app/[locale]/about/page.tsx
+index b3e667a..3307f74 100644
+--- a/src/app/[locale]/about/page.tsx
++++ b/src/app/[locale]/about/page.tsx
+@@ -51,6 +51,7 @@ export default async function AboutPage({ params }: Props) {
+           <li>{t("edu1")}</li>
+           <li>{t("edu2")}</li>
+           <li>{t("edu3")}</li>
++          <li>{t("edu4")}</li>
+         </ul>
+       </section>
+ 
+diff --git a/src/app/[locale]/page.tsx b/src/app/[locale]/page.tsx
+index 5a745fb..f9c4bd2 100644
+--- a/src/app/[locale]/page.tsx
++++ b/src/app/[locale]/page.tsx
+@@ -21,7 +21,8 @@ const portfolioItems = [
+   { name: "Prof. Dr. Ali Ayyıldız", logo: "/profdraliayyildiz.png", link: "https://www.profdraliayyildiz.com" },
+   { name: "AAIC LTD", logo: "/aaicltd.png", link: "https://www.aaicltd.co.uk" },
+   { name: "HPS Health", logo: "/hpshealth.png", link: "https://www.hpshealth.co.uk" },
+-  { name: "Medigo Academy", logo: "/medigoacademy.png", link: "https://www.medigoacademy.com" },
++  { name: "MediGoAcademy", logo: "/medigoacademy.png", link: "https://www.medigoacademy.com" },
++  { name: "sahibindenkonutal.com", logo: "/sahibindenkonutal.png", link: "https://www.sahibindenkonutal.com" },
+   { name: "Kitapol", logo: "/kitapol.png", link: "https://www.kitapol.com.tr" },
+   { name: "Misyonum Sağlık", logo: "/misyonumsaglikvebeslenme.png", link: "https://www.misyonumsaglikvebeslenme.com" },
+   { name: "Endova", logo: "/endova.png", link: "#" },
+@@ -37,8 +38,8 @@ export default async function HomePage({ params }: Props) {
+ 
+   return (
+     <div className="flex flex-col min-h-screen">
+-      {/* Hero Section */}
+-      <section className="relative isolate h-[clamp(20rem,25vw,32rem)] overflow-hidden border-b border-[var(--border)] bg-white">
++      {/* Hero — full-bleed, minimal brand + CTA */}
++      <section className="relative isolate h-[clamp(22rem,58vh,34rem)] overflow-hidden border-b border-[var(--border)] bg-[#0b0b0d]">
+         <Image
+           src="/tayfun-turkmen-cover.png"
+           alt=""
+@@ -46,34 +47,40 @@ export default async function HomePage({ params }: Props) {
+           priority
+           unoptimized
+           sizes="100vw"
+-          className="select-none object-cover object-[50%_48%]"
++          className="hero-media select-none object-cover object-[50%_46%]"
+         />
+-        <div className="absolute inset-x-0 bottom-4 z-10 flex justify-center px-4 sm:bottom-6">
+-          <nav
+-            aria-label={tr ? "Ana sayfa işlemleri" : "Homepage actions"}
+-            className="glass-surface flex w-full max-w-sm items-center gap-1.5 rounded-lg p-1.5"
+-          >
+-            <a
+-              href="#portfolio"
+-              className="flex min-h-10 flex-1 items-center justify-center rounded-md bg-[var(--text)] px-4 text-sm font-semibold text-[var(--bg)] transition-opacity hover:opacity-90"
+-            >
+-              {tr ? "Projeler" : "Projects"}
+-            </a>
+-            <Link
+-              href="/contact"
+-              className="flex min-h-10 flex-1 items-center justify-center rounded-md px-4 text-sm font-semibold text-[var(--text)] transition-colors hover:bg-[var(--chip)]"
+-            >
+-              {tr ? "İletişim" : "Contact"}
+-            </Link>
+-          </nav>
+-        </div>
+-        <div className="sr-only">
+-          <h1>Tayfun Türkmen</h1>
+-          <p>
+-            {tr
+-              ? "Web tasarım, yapay zekâ, veri ve siber güvenlik sistemleri."
+-              : "Web design, AI, data and cybersecurity systems."}
+-          </p>
++        <div
++          aria-hidden
++          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10"
++        />
++        <div className="absolute inset-0 z-10 flex flex-col justify-end px-4 pb-9 sm:px-6 sm:pb-12">
++          <div className="mx-auto w-full max-w-6xl">
++            <p className="hero-fade brand-microcopy text-[0.65rem] font-medium uppercase text-white/65">
++              {tr ? "Web Tasarım • Yapay Zekâ • Veri • Ağlar" : "Web Design • AI • Data • Networking"}
++            </p>
++            <h1 className="hero-fade hero-fade-delay-1 mt-3 font-[family-name:var(--font-display)] text-[1.85rem] font-semibold tracking-tight text-white sm:text-4xl">
++              Tayfun Türkmen
++            </h1>
++            <p className="hero-fade hero-fade-delay-2 mt-2 max-w-md text-sm leading-relaxed text-white/75 sm:text-[0.95rem]">
++              {tr
++                ? "Kurumsal web ve dijital sistemler."
++                : "Corporate web and digital systems."}
++            </p>
++            <div className="hero-fade hero-fade-delay-3 mt-6 flex flex-wrap items-center gap-3">
++              <a
++                href="#portfolio"
++                className="inline-flex min-h-10 items-center justify-center rounded-md bg-white px-5 text-sm font-semibold text-[#09090b] transition-opacity hover:opacity-90"
++              >
++                {tr ? "Projeler" : "Projects"}
++              </a>
++              <Link
++                href="/contact"
++                className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/25 bg-transparent px-5 text-sm font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/10"
++              >
++                {tr ? "İletişim" : "Contact"}
++              </Link>
++            </div>
++          </div>
+         </div>
+       </section>
+ 
+diff --git a/src/app/globals.css b/src/app/globals.css
+index 1bd1269..14a703d 100644
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -137,6 +137,51 @@ body {
+   display: none;
+ }
+ 
++.hero-media {
++  transform: scale(1.02);
++  animation: hero-kenburns 18s ease-out forwards;
++}
++
++.hero-fade {
++  opacity: 0;
++  transform: translateY(10px);
++  animation: hero-fade-up 0.7s ease-out forwards;
++}
++
++.hero-fade-delay-1 {
++  animation-delay: 0.12s;
++}
++
++.hero-fade-delay-2 {
++  animation-delay: 0.22s;
++}
++
++.hero-fade-delay-3 {
++  animation-delay: 0.34s;
++}
++
++@keyframes hero-fade-up {
++  to {
++    opacity: 1;
++    transform: translateY(0);
++  }
++}
++
++@keyframes hero-kenburns {
++  to {
++    transform: scale(1);
++  }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .hero-media,
++  .hero-fade {
++    animation: none;
++    opacity: 1;
++    transform: none;
++  }
++}
++
+ .prose-doc {
+   max-width: 65ch;
+   font-size: 1rem;
+-- 
+2.43.0
+

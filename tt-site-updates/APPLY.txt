@@ -1,0 +1,12 @@
+Apply these files onto github.com/TayfunTurkmen/TT (branch from main).
+
+Changes:
+1. MediGoAcademy written as one word in portfolio references
+2. New reference: sahibindenkonutal.com (+ public/sahibindenkonutal.png)
+3. Homepage hero made more minimal and professional
+4. Education: Istanbul University — Management Information Systems (MIS)
+
+Quick apply:
+  cd TT
+  git apply tt-site-updates/0001-hero-education-references.patch
+  # or copy messages/, public/, src/ over the matching paths
